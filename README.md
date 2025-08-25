@@ -10,14 +10,14 @@
 
 1. 在liunx系统下安装Docker
 
-如果操作系统为Ubuntu系列操作系统或其衍生版本，请输入以下指令使用小鱼的安装脚本进行部署
+如果操作系统为Ubuntu系列操作系统或其衍生版本，请输入以下指令使用小鱼的安装脚本进行部署，安装完毕后重启计算机。
 
 ```bash
 wget http://fishros.com/install -O fishros && sudo bash fishros
 ```
 2. 构建Docker镜像
 
-进入rm_vision目录，在该目录下输入以下指令，利用Dockerfile构建镜像
+进入本工程目录，在该目录下输入以下指令，利用Dockerfile构建镜像
 
 ```bash
 docker build --no-cache -t rm_vision .
@@ -66,7 +66,7 @@ git clone https://github.com/yuanluochen/vision_task.git
 
 ## 三、工程资料参考
 
-[《机器人辅助瞄准控制系统》](./docs/机器人辅助瞄准控制系统.pdf)——本论文为在下的本科生毕业论文，论文中第五章部分为在下电控代码部分的理论基础，其他部分为在下对rm——vision的视觉源码部分的理解。若读者对在下的电控解算部分感兴趣可阅读在下的论文。
+[《机器人辅助瞄准控制系统》](./docs/机器人辅助瞄准控制系统.pdf)——本论文为在下的本科生毕业论文，论文中第五章部分为在下电控代码部分的理论基础，其他部分为在下对rm_vision的视觉源码部分的理解。若读者对在下的电控解算部分感兴趣可阅读在下的论文。
 
 ## 四、辅助瞄准系统调参方法
 
