@@ -30,7 +30,7 @@ docker build --no-cache -t rm_vision .
 docker run -it --name rv_devel \
 --privileged --network host \
 -v /dev:/dev -v $HOME/.ros:/root/.ros -v ws:/ros_ws \
-vision2025:latest \
+rm_vision:latest \
 ros2 launch foxglove_bridge foxglove_bridge_launch.xml
 ```
 
@@ -40,7 +40,7 @@ ros2 launch foxglove_bridge foxglove_bridge_launch.xml
 docker run -it --name rv_runtime \
 --privileged --network host --restart always \
 -v /dev:/dev -v $HOME/.ros:/root/.ros -v ws:/ros_ws \
-vision2025:latest \
+rm_vision:latest \
 ros2 launch rm_vision_bringup vision_bringup.launch.py
 ```
 4. 附加
