@@ -45,7 +45,7 @@ ros2 launch rm_vision_bringup vision_bringup.launch.py
 ```
 4. 附加
 
-容器工作空间卷删除指令（容器运行报错试试这个）
+容器工作空间卷删除指令（容器运行时报错试试这个）
 
 ```bash
 docker volume rm ws
